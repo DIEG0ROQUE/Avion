@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+/*   font-family: "Roboto", sans-serif;  */
+}
+
+main{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e4edec;
+    position: absolute;
+}
+
+.menu{
+    background-color: #425c5a;
+    width: 25%;
+    height: 99vh;
+    position: absolute;
+    left: 0px;
+    border-top-right-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.perfil{
+    background-color: #2e4e4b;
+    width: 100%;
+    height: 30vh;
+    position: absolute;
+    border-top-right-radius: 30px;
+}
+
+.imagen-perfil{
+    position: absolute;
+    left: 35%;
+    top: 50px;
+}
+
+.info-perfil{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    position: absolute;
+    align-items: center;
+    top: 200px;
+    left: 33%;
+}
+
+.nombre{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.correo{
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.navegacion{
+    background-color: #425c5a;
+    width: 100%;
+    height: 40vh;
+    top: 30%;
+    position: relative;
+    padding: 20px 0px 20px 20px;
+    overflow: visible;
+}
+
+.lista{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.lista-item{
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+
+.lista-item a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 22px 30px 22px 70px;
+    position: relative;
+    letter-spacing: 1.5px; 
+}
+
+.casa{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.casa img{
+    position: absolute;
+    width: 60px;
+    left: 30px;
+}
+
+.icon-avion{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.icon-avion img{
+    position: absolute;
+    width: 80px;
+    left: 20px;
+}
+
+.icon-cartera{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.icon-cartera img{
+    position: absolute;
+    width: 80px;
+    left: 23px;
+}
+
+.icon-reporte{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.icon-reporte img{
+    position: absolute;
+    width: 80px;
+    left: 23px;
+}
+
+.icon-grafica{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.icon-grafica img{
+    position: absolute;
+    width: 80px;
+    left: 23px;
+}
+
+.icon-conf{
+    display: flex;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.icon-conf img{
+    position: absolute;
+    width: 80px;
+    left: 23px;
+}
+
+
+.lista-item:hover a{
+    background-color: #e4edec;
+    color: #425c5a;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-right: 60px
+
+    
+}
+
+.lista-item:hover::before{
+    content: '';
+    position: absolute;
+    top: -25px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-bottom-right-radius: 25px;
+    box-shadow: 7px 7px 0 7px #e4edec;
+    z-index: 0;
+    
+}
+
+.lista-item:hover::after{
+    content: '';
+    position: absolute;
+    top: 62px;
+    right: 0px;
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border-top-right-radius: 25px;
+    box-shadow: 7px -7px 0 7px #e4edec;
+    z-index: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.usuarios{
+    background-color: #425c5a;
+    width: 100%;
+    height: 25vh;
+    top: 683px;
+    position: absolute;
+    border-bottom-right-radius: 30px;
+}
+
+
+.active{
+    font-size: 16px;
+    color: #b7933a;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif; 
+    padding: 40px;
+}
+
+
+.imagen-perfiles img{
+    position: absolute;
+    width: 220px;
+    top: 25px;
+    left: 25%;
+}
+
+.imagen-mapa img{
+    position: absolute;
+    width: 220px;
+    bottom: 10px;
+    left: 25%;
+}
+
+
+
+
+.aviones{
+    width: 70%;
+    height: 25vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    top: 10px;
+    left: 28%;
+}
+
+.primero{
+    width: 25%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    background-color: #c89c32;
+    position: absolute;
+    left: 10px;
+    border-radius: 40px;
+}
+
+.texto1{
+    position: absolute;
+    left: 35px;
+}
+
+.boeing{
+    font-size: 20px;
+    display: block;
+    color: white;
+    line-height: 2.2; 
+}
+
+.cinco{
+    color: white;
+    font-size: 26px;
+}
+
+.img-avion img{
+    position: absolute;
+    top: 75px;
+    left: 150px;
+}
+
+.segundo{
+    width: 25%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    background-color: #425c58;
+    position: absolute;
+    left: 400px;
+    border-radius: 40px;
+}
+
+.texto2{
+    position: absolute;
+    left: 35px;
+}
+
+.airbus{
+    font-size: 20px;
+    display: block;
+    color: white;
+    line-height: 2.2; 
+}
+
+.seis{
+    color: white;
+    font-size: 26px;
+}
+
+.img-av img{
+    position: absolute;
+    top: 75px;
+    left: 150px;
+}
+
+.tercero{
+    width: 30%;
+    height: 18vh;
+    display: flex;
+    align-items: center;
+    background-color: #425c58;
+    position: absolute;
+    left: 790px;
+    border-radius: 40px;
+}
+
+.texto3{
+    position: absolute;
+    left: 35px;
+}
+
+.total{
+    font-size: 20px;
+    display: block;
+    color: white;
+    line-height: 2.2; 
+}
+
+.ocho{
+    color: white;
+    font-size: 26px;
+}
+
+.map img{
+    position: absolute;
+    width: 250px;
+    top: 15px;
+    left: 150px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.graficas-container {
+    width: 70%;
+    height: auto;
+    position: absolute;
+    top: 280px;
+    left: 28%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-right: 20px;
+}
+
+.primeras{
+    position: relative;
+    top: -30px;
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.last-trips-elemento {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 0px;
+    width: 55.5%;
+    position: relative;
+    left: 10px;
+}
+
+.titulos-last {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 20px;
+    position: relative;
+    left: 20px;
+    top: 10px;
+}
+
+.titulo-last {
+    font-size: 20px;
+    font-weight: 700;
+    color: #2e4e4b;
+}
+
+.sub-last {
+    font-size: 13px;
+    color: #8a9a97;
+    font-weight: 400;
+}
+
+.encabezado-last {
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 2fr 1fr 1.2fr 1fr;
+    padding-bottom: 15px;
+    border-bottom: 2px dashed #e8efee; /*aqui es la linea punteada*/
+    margin-bottom: 15px;
+}
+
+.encabezado-last span {
+    font-size: 12px;
+    color: #8a9a97;
+    font-weight: 600;
+}
+
+.header-members {
+    text-align: left;
+    padding-left: 20px;
+}
+
+.header-flight {
+    position: relative;
+    left: 5px;
+}
+
+.header-total {
+    position: relative;
+    left: -30px;
+
+}
+
+.header-price {
+    position: relative;
+    left: -25px;
+}
+
+
+.viajes-totales {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.2fr 1fr;
+    gap: 10px;
+    align-items: center;
+    padding: 15px;
+    background-color: #f8fafa;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    
+}
+/*aqui es para el color que resalta*/
+.viajes-totales:hover {
+    background-color: #f0f5f4;
+}
+
+
+.miembro {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+
+
+.imagen-miembro img {
+    width: 85%;
+    position: relative;
+}
+
+.inf-miembro {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: -10px;
+    gap: 3px;
+}
+
+.nombre-miembro {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2e4e4b;
+}
+
+.email-miembro {
+    font-size: 12px;
+    color: #8a9a97;
+}
+
+
+.imagen-miembro2 img{
+    width: 100%;
+    position: relative;
+    left: 6px;
+}
+
+
+
+.grafica-stats,
+.grafica-share,
+.grafica-schedule {
+    background-color: #ffffff;
+    border-radius: 30px;
+    padding: 25px;
+}
+
+.grafica-stats {
+    position: relative;
+    left: 50px;
+    width: 30.3%;
+    height: 100%;
+    
+}
+
+
+
+.segundas{
+    position: relative;
+    top: -10px;
+    background-color: rgb(157, 255, 255);
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.grafica-share {
+    position: relative;
+    left: 10px;
+    width: 28%;
+    height: 300px;
+}
+
+.grafica-schedule {
+    width: 58.5%;
+    height: 300px;
+    position: relative;
+    left: 40px;
+}
+
+.graficas-container h3 {
+    color: #425c5a;
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    font-family: "Roboto", sans-serif;
+}
+
+.graficas-container canvas {
+    max-height: 240px;
+}
+
+
+
+
