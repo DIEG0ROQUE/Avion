@@ -8,9 +8,7 @@
 </head>
 <body>
     <main>
-
         <div class="menu">
-            
             <div class="perfil">
                 <div class="imagen-perfil">
                     <img src="img/image-pelfil.png">
@@ -26,7 +24,7 @@
                     <li class="lista-item">
                         <a href="#">
                             <div class="casa">
-                            <img src="img/image-logocasa.png">
+                                <img src="img/image-logocasa.png">
                             </div>
                             DASBOARD
                         </a>
@@ -71,168 +69,133 @@
                             SETTINGS
                         </a>
                     </li>
-                    
                 </ul>
             </div>
 
             <div class="usuarios">
-                <div class="titulo">
-                    <span class="active">ACTIVE USERS</span>
-                </div>
-
+                <span class="active">ACTIVE USERS</span>
                 <div class="imagen-perfiles">
                     <img src="img/image-perfiles.png">
                 </div>
-                
                 <div class="imagen-mapa">
                     <img src="img/image-mapa.png">
                 </div>
             </div>
         </div>
 
-
-
-        <div class="aviones">
-            <div class="primero">
-                <div class="texto1">
-                    <span class="boeing">Boeing 787</span>
-                    <span class="cinco">$548</span>
+        <div class="contenedor-derecho">
+            <div class="aviones">
+                <div class="primero">
+                    <div class="texto1">
+                        <span class="boeing">Boeing 787</span>
+                        <span class="cinco">$548</span>
+                    </div>
+                    <div class="img-avion">
+                        <img src="img/image-avion.png">
+                    </div>
                 </div>
-                <div class="img-avion">
-                    <img src="img/image-avion.png">
+
+                <div class="segundo">
+                    <div class="texto2">
+                        <span class="airbus">Airbus</span>
+                        <span class="seis">$620</span>
+                    </div>
+                    <div class="img-av">
+                        <img src="img/image-avion.png">
+                    </div>
+                </div>
+
+                <div class="tercero">
+                    <div class="texto3">
+                        <span class="total">Total Flights</span>
+                        <span class="ocho">850</span>
+                    </div>
+                    <div class="map">
+                        <img src="img/image-mapa.png">
+                    </div>
                 </div>
             </div>
 
-            <div class="segundo">
-                <div class="texto2">
-                    <span class="airbus">Airbus</span>
-                    <span class="seis">$620</span>
-                </div>
-                <div class="img-av">
-                <img src="img/image-avion.png">
-                </div>
-            </div>
+            <div class="graficas-container">
+                <div class="primeras">
+                    <div class="last-trips-elemento">
+                        <div class="titulos-last">
+                            <span class="titulo-last">Last Trips</span>
+                            <span class="sub-last">Overview of latest month</span>
+                        </div>
 
-            <div class="tercero">
-                <div class="texto3">
-                    <span class="total">Total Flights</span>
-                    <span class="ocho">850</span>
+                        <div class="encabezado-last">
+                            <span class="header-members">Members</span>
+                            <span class="header-flight">Flight</span>
+                            <span class="header-total">Total Members</span>
+                            <span class="header-price">Ticket Price</span>
+                        </div>
+
+                        <div class="viajes-totales">
+                            <div class="miembro">
+                                <div class="imagen-miembro">
+                                    <img src="img/image-perfil1.png">
+                                </div>
+                                <div class="inf-miembro">
+                                    <span class="nombre-miembro">John Doe</span>
+                                    <span class="email-miembro">john@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="lugar">
+                                <span>Qatar</span>
+                            </div>
+                            <div class="miembros">
+                                <span>5</span>
+                            </div>
+                            <div class="precio">
+                                <span>$56k</span>
+                            </div>
+                        </div>
+
+                        <div class="viajes-totales">
+                            <div class="miembro">
+                                <div class="imagen-miembro2">
+                                    <img src="img/image-perfil2.png">
+                                </div>
+                                <div class="inf-miembro2">
+                                    <span class="nombre-miembro">Martin Loiness</span>
+                                    <span class="email-miembro">martin_loi@gmail.com</span>
+                                </div>
+                            </div>
+                            <div class="lugar">
+                                <span>Emirates</span>
+                            </div>
+                            <div class="miembros">
+                                <span>2</span>
+                            </div>
+                            <div class="precio">
+                                <span>$56k</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="grafica-stats">
+                        <h3>Statistics</h3>
+                        <canvas id="statsChart"></canvas>
+                    </div>
                 </div>
-                <div class="map">
-                    <img src="img/image-mapa.png">
+
+                <div class="segundas">
+                    <div class="grafica-share">
+                        <h3>Flights Share</h3>
+                        <canvas id="shareChart"></canvas>
+                    </div>
+
+                    <div class="grafica-schedule">
+                        <h3>Flights Schedule</h3>
+                        <canvas id="scheduleChart"></canvas>
+                    </div>
                 </div>
             </div>
         </div>
-
-
-
-
-
-
-
-        <div class="graficas-container">
-            
-             <div class="primeras">
-                <div class="last-trips-elemento">
-                    <div class="titulos-last">
-                        <span class="titulo-last">Last Trips</span>
-                        <span class="sub-last">Overview of latest month</span>
-                    </div>
-
-                    <div class="encabezado-last">
-                        <span class="header-members">Members</span>
-                        <span class="header-flight">Flight</span>
-                        <span class="header-total">Total Members</span>
-                        <span class="header-price">Ticket Price</span>
-                    </div>
-
-
-
-                    <div class="viajes-totales">
-                        <div class="miembro">
-                            <div class="imagen-miembro">
-                                <img src="img/image-perfil1.png">
-                            </div>
-                            <div class="inf-miembro">
-                                <span class="nombre-miembro">John Doe</span>
-                                <span class="email-miembro">john@gmail.com</span>
-                            </div>
-                        </div>
-
-                        <div class="lugar">
-                            <span>Qatar</span>
-                        </div>
-
-                        <div class="miembros">
-                            <span>5</span>
-                        </div>
-
-                        <div class="precio">
-                            <span>$56k</span>
-                        </div>
-                    </div>
-
-                    <div class="viajes-totales">
-                        <div class="miembro">
-                            <div class="imagen-miembro2">
-                                <img src="img/image-perfil2.png">
-                            </div>
-                            <div class="inf-miembro2">
-                                <span class="nombre-miembro">Martin Loiness</span>
-                                <span class="email-miembro">martin_loi@gmail.com</span>
-                            </div>
-                        </div>
-
-                        <div class="lugar">
-                            <span>Emirates</span>
-                        </div>
-
-                        <div class="miembros">
-                            <span>2</span>
-                        </div>
-
-                        <div class="precio">
-                            <span>$56k</span>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="grafica-stats">
-                <h3>Statistics</h3>
-                <canvas id="statsChart"></canvas>
-                </div>
-             </div>
-
-
-
-            <div class="segundas">
-                <div class="grafica-share">
-                    <h3>Flights Share</h3>
-                    <canvas id="shareChart"></canvas>
-                </div>
-
-                <div class="grafica-schedule">
-                    <h3>Flights Schedule</h3>
-                    <canvas id="scheduleChart"></canvas>
-                </div>
-            </div>
-            
-
-
-        </div>
-
-
-
-
-
-
-
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
     <script src="./charts.js"></script>
-
-
 </body>
 </html>

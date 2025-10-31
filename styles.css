@@ -2,25 +2,21 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*   font-family: "Roboto", sans-serif;  */
 }
 
 main{
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
     background-color: #e4edec;
-    position: absolute;
+    position: relative;
 }
 
 .menu{
     background-color: #425c5a;
-    width: 25%;
-    height: 99vh;
-    position: absolute;
-    left: 0px;
+    width: 300px; 
+    min-height: 100vh;
+    position: relative; 
     border-top-right-radius: 30px;
     border-bottom-right-radius: 30px;
 }
@@ -28,25 +24,26 @@ main{
 .perfil{
     background-color: #2e4e4b;
     width: 100%;
-    height: 30vh;
-    position: absolute;
+    height: 280px; 
+    position: relative; 
     border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
 }
 
 .imagen-perfil{
-    position: absolute;
-    left: 35%;
-    top: 50px;
+    position: relative; 
+    margin-bottom: 20px;
 }
 
 .info-perfil{
     display: flex;
     flex-direction: column;
     gap: 5px;
-    position: absolute;
+    position: relative; 
     align-items: center;
-    top: 200px;
-    left: 33%;
 }
 
 .nombre{
@@ -64,11 +61,8 @@ main{
 .navegacion{
     background-color: #425c5a;
     width: 100%;
-    height: 40vh;
-    top: 30%;
-    position: relative;
+    position: relative; 
     padding: 20px 0px 20px 20px;
-    overflow: visible;
 }
 
 .lista{
@@ -82,7 +76,6 @@ main{
     margin: 0;
     padding: 0;
 }
-
 
 .lista-item a{
     display: flex;
@@ -167,15 +160,12 @@ main{
     left: 23px;
 }
 
-
 .lista-item:hover a{
     background-color: #e4edec;
     color: #425c5a;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     padding-right: 60px
-
-    
 }
 
 .lista-item:hover::before{
@@ -189,7 +179,6 @@ main{
     border-bottom-right-radius: 25px;
     box-shadow: 7px 7px 0 7px #e4edec;
     z-index: 0;
-    
 }
 
 .lista-item:hover::after{
@@ -205,93 +194,75 @@ main{
     z-index: 100%;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .usuarios{
     background-color: #425c5a;
     width: 100%;
-    height: 25vh;
-    top: 683px;
-    position: absolute;
+    position: relative; 
     border-bottom-right-radius: 30px;
+    padding: 40px 20px;
 }
-
 
 .active{
     font-size: 16px;
     color: #b7933a;
     font-weight: 600;
     font-family: "Roboto", sans-serif; 
-    padding: 40px;
+    display: block;
+    margin-bottom: 20px;
 }
 
+.imagen-perfiles{
+    position: relative; 
+    text-align: center;
+    margin-bottom: 20px;
+}
 
 .imagen-perfiles img{
-    position: absolute;
     width: 220px;
-    top: 25px;
-    left: 25%;
+}
+
+.imagen-mapa{
+    position: relative; 
+    text-align: center;
 }
 
 .imagen-mapa img{
-    position: absolute;
     width: 220px;
-    bottom: 10px;
-    left: 25%;
 }
 
-
-
+.contenedor-derecho{
+    flex: 1;
+    padding: 10px 20px;
+}
 
 .aviones{
-    width: 70%;
-    height: 25vh;
+    width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: transparent;
-    position: absolute;
-    top: 10px;
-    left: 28%;
+    gap: 20px;
+    margin-bottom: 30px;
 }
 
 .primero{
-    width: 25%;
-    height: 18vh;
+    
+    height: 180px;
+    width: 400px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     background-color: #c89c32;
-    position: absolute;
-    left: 10px;
+    position: relative;
     border-radius: 40px;
+    padding: 30px;
 }
 
 .texto1{
-    position: absolute;
-    left: 35px;
+    position: relative; 
 }
 
 .boeing{
-    font-size: 20px;
+    font-size: 24px;
     display: block;
     color: white;
-    line-height: 2.2; 
+    line-height: 3.2; 
 }
 
 .cinco{
@@ -301,31 +272,31 @@ main{
 
 .img-avion img{
     position: absolute;
-    top: 75px;
+    width: 70%;
+    top: 40px;
     left: 150px;
 }
 
 .segundo{
-    width: 25%;
-    height: 18vh;
+    height: 180px;
+    width: 400px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     background-color: #425c58;
-    position: absolute;
-    left: 400px;
+    position: relative;
     border-radius: 40px;
+    padding: 30px;
 }
 
 .texto2{
-    position: absolute;
-    left: 35px;
+    position: relative; 
 }
 
 .airbus{
-    font-size: 20px;
+    font-size: 24px;
     display: block;
     color: white;
-    line-height: 2.2; 
+    line-height: 3.2; 
 }
 
 .seis{
@@ -335,31 +306,31 @@ main{
 
 .img-av img{
     position: absolute;
-    top: 75px;
+    width: 70%;
+    top: 40px;
     left: 150px;
 }
 
 .tercero{
-    width: 30%;
-    height: 18vh;
+    flex: 1;
+    height: 180px;
     display: flex;
-    align-items: center;
+    flex-direction: column;
     background-color: #425c58;
-    position: absolute;
-    left: 790px;
+    position: relative;
     border-radius: 40px;
+    padding: 30px;
 }
 
 .texto3{
-    position: absolute;
-    left: 35px;
+    position: relative; 
 }
 
 .total{
-    font-size: 20px;
+    font-size: 24px;
     display: block;
     color: white;
-    line-height: 2.2; 
+    line-height: 3.2; 
 }
 
 .ocho{
@@ -369,67 +340,30 @@ main{
 
 .map img{
     position: absolute;
-    width: 250px;
-    top: 15px;
-    left: 150px;
+    width: 280px;
+    bottom: 10px;
+    right: 80px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .graficas-container {
-    width: 70%;
-    height: auto;
-    position: absolute;
-    top: 280px;
-    left: 28%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding-right: 20px;
+    width: 100%;
+    position: relative; 
 }
 
 .primeras{
     position: relative;
-    top: -30px;
-    background-color: aqua;
+    background-color: transparent;
     width: 100%;
     display: flex;
     gap: 20px;
-    align-items: stretch;
+    margin-bottom: 20px;
 }
 
 .last-trips-elemento {
     background-color: #ffffff;
     border-radius: 30px;
-    padding: 0px;
-    width: 55.5%;
-    position: relative;
-    left: 10px;
+    padding: 25px;
+    flex: 1;
 }
 
 .titulos-last {
@@ -437,9 +371,6 @@ main{
     flex-direction: column;
     gap: 5px;
     margin-bottom: 20px;
-    position: relative;
-    left: 20px;
-    top: 10px;
 }
 
 .titulo-last {
@@ -459,7 +390,7 @@ main{
     gap: 15px;
     grid-template-columns: 2fr 1fr 1.2fr 1fr;
     padding-bottom: 15px;
-    border-bottom: 2px dashed #e8efee; /*aqui es la linea punteada*/
+    border-bottom: 2px dashed #e8efee; 
     margin-bottom: 15px;
 }
 
@@ -471,25 +402,7 @@ main{
 
 .header-members {
     text-align: left;
-    padding-left: 20px;
 }
-
-.header-flight {
-    position: relative;
-    left: 5px;
-}
-
-.header-total {
-    position: relative;
-    left: -30px;
-
-}
-
-.header-price {
-    position: relative;
-    left: -25px;
-}
-
 
 .viajes-totales {
     display: grid;
@@ -500,13 +413,11 @@ main{
     background-color: #f8fafa;
     border-radius: 15px;
     margin-bottom: 10px;
-    
 }
-/*aqui es para el color que resalta*/
+
 .viajes-totales:hover {
     background-color: #f0f5f4;
 }
-
 
 .miembro {
     display: flex;
@@ -514,18 +425,13 @@ main{
     gap: 12px;
 }
 
-
-
 .imagen-miembro img {
-    width: 85%;
-    position: relative;
+    width: 50px;
 }
 
 .inf-miembro {
     display: flex;
     flex-direction: column;
-    position: relative;
-    left: -10px;
     gap: 3px;
 }
 
@@ -540,14 +446,9 @@ main{
     color: #8a9a97;
 }
 
-
 .imagen-miembro2 img{
-    width: 100%;
-    position: relative;
-    left: 6px;
+    width: 50px;
 }
-
-
 
 .grafica-stats,
 .grafica-share,
@@ -555,40 +456,29 @@ main{
     background-color: #ffffff;
     border-radius: 30px;
     padding: 25px;
+    align-items: center;
 }
 
 .grafica-stats {
-    position: relative;
-    left: 50px;
-    width: 30.3%;
-    height: 100%;
-    
+    flex: 1;
+    min-height: 400px;
 }
-
-
 
 .segundas{
     position: relative;
-    top: -10px;
-    background-color: rgb(157, 255, 255);
+    background-color: transparent;
     width: 100%;
     display: flex;
     gap: 20px;
-    align-items: stretch;
 }
 
 .grafica-share {
-    position: relative;
-    left: 10px;
-    width: 28%;
-    height: 300px;
+    flex: 1;
+    min-height: 400px;
 }
 
 .grafica-schedule {
-    width: 58.5%;
-    height: 300px;
-    position: relative;
-    left: 40px;
+    flex: 2;
 }
 
 .graficas-container h3 {
@@ -600,9 +490,5 @@ main{
 }
 
 .graficas-container canvas {
-    max-height: 240px;
+    max-height: 340px;
 }
-
-
-
-
